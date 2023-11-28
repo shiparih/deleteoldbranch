@@ -12,6 +12,10 @@ on:
           - info
           - warning
           - debug
+      repo_name:
+        description: |
+          You can specify name of the repository where workflows should be pushed manually.
+        required: false
 jobs:
   delete_old_tags:
     runs-on: ubuntu-latest
