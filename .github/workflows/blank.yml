@@ -11,8 +11,8 @@ on:
           - info
           - warning
           - debug
-      tags:
-        description: 'Test scenario tags'
+      token:
+        description: 'github token'
         required: true
         type: string
 jobs:
@@ -22,4 +22,4 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
-          token: ${{ secrets.CICD_GITHUB_REPOSITORY_TOKEN }}
+          token: "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"
