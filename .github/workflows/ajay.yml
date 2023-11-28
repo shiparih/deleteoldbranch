@@ -22,8 +22,8 @@ jobs:
 
     - name: Delete old tags
       run: |
-        # Set the date 60 days ago
-        OLDEST_DATE=$(date -d "60 days ago" +%Y-%m-%d)
+        # Set the date 30 days ago
+        OLDEST_DATE=$(date -d "30 days ago" +%Y-%m-%d)
         
         # List all tags
         TAGS=$(git tag -l)
